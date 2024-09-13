@@ -1,0 +1,105 @@
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.item:first-child {
+    background-color: blueviolet;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.item:first-child:hover {
+    transform: translateX(30px, 20px);
+}
+
+.item:nth-child(2) {
+    background-color: brown;
+}
+
+.item:nth-child(2):hover {
+    /* transform: scale(1.5, 2.5); */
+    transform: scaleX(2);
+    transform: scaleY(1.2);
+}
+
+.item:nth-child(3) {
+    background-color: blue;
+    /* transform: rotate(45deg); */
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 2000ms;
+}
+
+.item:nth-child(3):hover {
+    transform: rotate(360deg);
+    /* transform: rotate(-360deg); */
+}
+
+.item:nth-child(4) {
+    background-color: plum;
+}
+
+.item:nth-child(4):hover {
+    transform: skew(10deg, 10deg);
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.item:nth-child(5) {
+    background-color: slategray;
+    transition-property: all;
+    transition-duration: 3000ms;
+}
+
+.item:nth-child(5):hover {
+    transform: translate(50px, 10px) scale(1.2) rotate(90deg);
+}
+
+.item:nth-child(6) {
+    background-color: hotpink;
+}
+
+.item:nth-child(6):hover {
+    transform: matrix(1,2,0,2,0,2);
+}
+
+/* маштаб по горизонталі - scaleX 
+маштаб по горизонталі - scaleY
+поворот по горизонталі - skewX
+поворот по горизонталі - skewY
+змішення по горизонаталі - translateX
+змішення по горизонаталі - translateY */
+
+.item:nth-child(7) {
+    background-color: darkcyan;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.item:nth-child(7):hover {
+    transform-origin: center bottom;
+    transform: rotate(180deg);
+    transform-origin: 0,0;
+}
+
+.item:nth-child(8) {
+    background-color: burlywood;
+    transition-property: all;
+    transition-duration: 1000ms;
+}
+
+.item:nth-child(8):hover {
+    transform: rotate3d(2, 3, 1, 90deg);
+}
